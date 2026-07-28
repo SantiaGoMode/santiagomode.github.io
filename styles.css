@@ -575,6 +575,272 @@ footer {
   line-height: 1.58;
 }
 
+/* About */
+
+.about-main {
+  padding-bottom: 72px;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.68fr);
+  gap: clamp(42px, 7vw, 96px);
+  align-items: center;
+  padding: 64px 0 72px;
+}
+
+.about-hero h1 {
+  max-width: 790px;
+  margin-bottom: 26px;
+  font-size: clamp(3.4rem, 6.7vw, 6rem);
+}
+
+.about-lede {
+  max-width: 670px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 1.7vw, 1.24rem);
+  line-height: 1.62;
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.about-portrait {
+  margin: 0;
+}
+
+.about-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--surface-muted);
+  border: 1px solid var(--line);
+}
+
+.about-portrait figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 12px;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.about-proof,
+.about-story,
+.career-section {
+  padding-bottom: 68px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.impact-item {
+  min-height: 205px;
+  padding: 28px;
+}
+
+.impact-item + .impact-item {
+  border-left: 1px solid var(--line);
+}
+
+.impact-item strong {
+  display: block;
+  margin-bottom: 56px;
+  color: var(--accent);
+  font-size: clamp(2.4rem, 4.4vw, 4rem);
+  font-weight: 650;
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+}
+
+.impact-item span {
+  display: block;
+  max-width: 190px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+  gap: 16px;
+}
+
+.about-statement,
+.capability-list {
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.about-statement {
+  padding: clamp(28px, 4vw, 48px);
+}
+
+.about-statement p {
+  margin-bottom: 24px;
+  font-size: clamp(1.18rem, 2.1vw, 1.55rem);
+  line-height: 1.48;
+  letter-spacing: -0.025em;
+}
+
+.about-statement p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.capability-list {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 28px;
+}
+
+.capability-list span {
+  display: flex;
+  min-height: 68px;
+  align-items: center;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  font-size: 0.83rem;
+  font-weight: 750;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.capability-list span::before {
+  width: 7px;
+  height: 7px;
+  margin-right: 14px;
+  content: "";
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.capability-list span:last-child {
+  border-bottom: 0;
+}
+
+.career-list {
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.career-item {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 30px;
+  padding: 32px;
+}
+
+.career-item + .career-item {
+  border-top: 1px solid var(--line);
+}
+
+.career-date,
+.career-company,
+.credential-kicker {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.career-company {
+  margin-bottom: 12px;
+}
+
+.career-item h3 {
+  max-width: 700px;
+  margin-bottom: 12px;
+  font-size: clamp(1.5rem, 2.6vw, 2.25rem);
+  font-weight: 650;
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.career-item p:last-child {
+  max-width: 720px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.56;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.credentials-grid article {
+  padding: clamp(28px, 4vw, 46px);
+}
+
+.credentials-grid article + article {
+  border-left: 1px solid var(--line);
+}
+
+.credential-kicker {
+  margin-bottom: 30px;
+}
+
+.credentials-grid h3 {
+  margin-bottom: 7px;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 650;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.credentials-grid h3:not(:first-of-type) {
+  margin-top: 30px;
+}
+
+.credentials-grid p:not(.credential-kicker) {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.credentials-grid ul {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
+  color: var(--muted);
+  list-style: none;
+}
+
+.credentials-grid li {
+  padding-bottom: 13px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.88rem;
+}
+
+.credentials-grid li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
 @media (max-width: 900px) {
   .intro {
     grid-template-columns: minmax(0, 1fr) minmax(230px, 300px);
@@ -592,6 +858,27 @@ footer {
   .project-visual {
     border-top: 1px solid var(--line);
     border-left: 0;
+  }
+
+  .about-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
+    gap: 36px;
+  }
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impact-item:nth-child(3) {
+    border-left: 0;
+  }
+
+  .impact-item:nth-child(n + 3) {
+    border-top: 1px solid var(--line);
+  }
+
+  .about-story-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -611,11 +898,11 @@ footer {
   }
 
   nav {
-    gap: 18px;
+    gap: 13px;
   }
 
   .nav-link {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   .nav-link.active::after {
@@ -696,6 +983,67 @@ footer {
 
   .paper-copy {
     padding: 26px 22px 30px;
+  }
+
+  .about-main {
+    padding-bottom: 52px;
+  }
+
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 44px 0 52px;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(3rem, 15vw, 4.8rem);
+  }
+
+  .about-portrait {
+    width: min(100%, 420px);
+  }
+
+  .about-portrait figcaption {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .about-proof,
+  .about-story,
+  .career-section {
+    padding-bottom: 52px;
+  }
+
+  .impact-item {
+    min-height: 180px;
+    padding: 22px;
+  }
+
+  .impact-item strong {
+    margin-bottom: 42px;
+  }
+
+  .about-statement {
+    padding: 26px 22px;
+  }
+
+  .capability-list {
+    padding-inline: 22px;
+  }
+
+  .career-item {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 26px 22px;
+  }
+
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .credentials-grid article + article {
+    border-top: 1px solid var(--line);
+    border-left: 0;
   }
 
 }
