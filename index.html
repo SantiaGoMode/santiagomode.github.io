@@ -30,6 +30,7 @@
         <a class="nav-link active" href="#projects" aria-current="page">
           Projects
         </a>
+        <a class="nav-link" href="articles.html">Articles</a>
         <a
           class="nav-link"
           href="https://github.com/SantiaGoMode"
@@ -60,7 +61,7 @@
           <span>02</span>
         </div>
 
-        <article class="project-card">
+        <article class="project-card project-card--hive">
           <div class="project-copy">
             <div class="project-meta">
               <span class="status"><i aria-hidden="true"></i> Active</span>
@@ -140,35 +141,76 @@
           </div>
         </article>
 
-        <article class="project-row project-row--classifier">
-          <div class="project-row-index" aria-hidden="true">02</div>
-          <div class="project-row-copy">
+        <article class="project-card project-card--classifier">
+          <div class="project-copy">
             <div class="project-meta">
-              <span class="project-status">Project page live</span>
+              <span class="status"><i aria-hidden="true"></i> Live page</span>
               <span>Finance + local AI</span>
             </div>
-            <h3>CapEx / OpEx<br />Classifier</h3>
-            <p>
-              A finance analyst agent that classifies Jira work items against
-              company standards, then produces confidence scores and an
-              auditor-friendly reasoning report.
-            </p>
-          </div>
-          <div class="project-row-action">
-            <span>Python · Ollama · Qwen 2.5</span>
-            <div class="project-row-links">
-              <a href="https://santiagomode.github.io/capex_opex_classifier/">
-                Visit project <span aria-hidden="true">↗</span>
+
+            <div>
+              <h3>CapEx / OpEx<br />Classifier</h3>
+              <p class="project-summary">
+                A finance analyst agent that classifies Jira work against
+                company standards, with confidence scores and an
+                auditor-friendly reasoning report.
+              </p>
+            </div>
+
+            <ul class="project-tags" aria-label="Classifier technologies">
+              <li>Python</li>
+              <li>Ollama</li>
+              <li>Qwen 2.5</li>
+              <li>Jira</li>
+            </ul>
+
+            <div class="project-actions">
+              <a
+                class="primary-action"
+                href="https://santiagomode.github.io/capex_opex_classifier/"
+              >
+                Visit project
+                <span aria-hidden="true">↗</span>
               </a>
               <a
+                class="text-action"
                 href="https://github.com/SantiaGoMode/capex_opex_classifier"
                 target="_blank"
                 rel="noreferrer"
-                aria-label="View the CapEx OpEx Classifier repository on GitHub"
               >
-                Source
+                View source
               </a>
             </div>
+          </div>
+
+          <div class="project-visual" aria-hidden="true">
+            <div class="window">
+              <div class="window-bar">
+                <div class="window-dots"><i></i><i></i><i></i></div>
+                <span>Classifier / Review</span>
+              </div>
+              <div class="classifier-body">
+                <div class="classifier-item">
+                  <span>Work item</span>
+                  <b>PROJ-142</b>
+                  <p>Build a new customer reporting capability</p>
+                </div>
+                <div class="classifier-flow">
+                  <i></i>
+                  <span>Evaluate</span>
+                  <i></i>
+                </div>
+                <div class="classifier-result">
+                  <span>Classification</span>
+                  <strong>CapEx</strong>
+                  <small>92% confidence</small>
+                  <p>Matched: new functionality with future benefit</p>
+                </div>
+              </div>
+            </div>
+            <span class="visual-label">
+              Evidence · confidence · audit trail
+            </span>
           </div>
         </article>
       </section>
@@ -183,48 +225,74 @@
           <span>Archive</span>
         </div>
 
-        <a
-          class="archive-card"
-          href="https://santiagomode.github.io/flairrcoin-project/"
-          aria-label="Visit the Flairrcoin project archive"
-        >
-          <div class="archive-year">
-            <span>2020</span>
-            <i aria-hidden="true"></i>
-          </div>
-
-          <div class="archive-copy">
+        <article class="project-card project-card--flairr">
+          <div class="project-copy">
             <div class="project-meta">
+              <span class="status"><i aria-hidden="true"></i> Archive</span>
               <span>Project + technical lead</span>
-              <span>UCF Senior Design</span>
             </div>
-            <h3>Flairrcoin</h3>
-            <p>
-              A feeless cryptocurrency system built from research through
-              working software, spanning the network protocol, infrastructure,
-              wallets, realtime delivery, and project handoff.
-            </p>
-            <ul aria-label="Flairrcoin technologies">
+
+            <div>
+              <h3>Flairrcoin</h3>
+              <p class="project-summary">
+                A feeless cryptocurrency system built from research through
+                working software, spanning the network, infrastructure,
+                wallets, realtime delivery, and project handoff.
+              </p>
+            </div>
+
+            <ul class="project-tags" aria-label="Flairrcoin technologies">
               <li>C++</li>
               <li>Electron</li>
               <li>Node.js</li>
               <li>AWS</li>
             </ul>
+
+            <div class="project-actions">
+              <a
+                class="primary-action"
+                href="https://santiagomode.github.io/flairrcoin-project/"
+              >
+                Visit archive
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                class="text-action"
+                href="https://github.com/SantiaGoMode/flairrcoin"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View source
+              </a>
+            </div>
           </div>
 
-          <div class="archive-mark" aria-hidden="true">
-            <span class="archive-orbit orbit-wide"></span>
-            <span class="archive-orbit orbit-tight"></span>
-            <span class="archive-node node-one"></span>
-            <span class="archive-node node-two"></span>
-            <strong>FLR</strong>
+          <div class="project-visual" aria-hidden="true">
+            <div class="window">
+              <div class="window-bar">
+                <div class="window-dots"><i></i><i></i><i></i></div>
+                <span>Flairrcoin / System map</span>
+              </div>
+              <div class="flairr-body">
+                <div class="flairr-network">
+                  <span class="flairr-orbit orbit-wide"></span>
+                  <span class="flairr-orbit orbit-tight"></span>
+                  <span class="flairr-node node-one"></span>
+                  <span class="flairr-node node-two"></span>
+                  <strong>FLR</strong>
+                </div>
+                <div class="flairr-stack">
+                  <div><span>01</span><b>Network</b><small>Block lattice</small></div>
+                  <div><span>02</span><b>Wallet</b><small>Cross-platform</small></div>
+                  <div><span>03</span><b>Delivery</b><small>Realtime events</small></div>
+                </div>
+              </div>
+            </div>
+            <span class="visual-label">
+              Protocol · wallet · realtime delivery
+            </span>
           </div>
-
-          <div class="archive-link">
-            <span>Open project archive</span>
-            <i aria-hidden="true">↗</i>
-          </div>
-        </a>
+        </article>
       </section>
     </main>
 

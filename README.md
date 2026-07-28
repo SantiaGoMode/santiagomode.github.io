@@ -2,6 +2,9 @@
 
 The source for Cris Santiago's projects page.
 
+- [Projects](https://santiagomode.github.io/)
+- [Articles](https://santiagomode.github.io/articles.html)
+
 ## Current projects
 
 - [Hive](https://santiagomode.github.io/hive/) — live project page
@@ -12,9 +15,6 @@ The source for Cris Santiago's projects page.
 
 - [Flairrcoin](https://santiagomode.github.io/flairrcoin-project/) — project
   archive
-
-The implementation plan for the classifier page is in
-[`plans/capex-opex-classifier-page.md`](plans/capex-opex-classifier-page.md).
 
 ## Local preview
 
