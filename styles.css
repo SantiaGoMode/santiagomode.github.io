@@ -273,7 +273,8 @@ h1 {
   letter-spacing: -0.06em;
 }
 
-.project-card--classifier h3 {
+.project-card--classifier h3,
+.project-card--freshbooks h3 {
   font-size: clamp(2.7rem, 4.5vw, 4.05rem);
 }
 
