@@ -5,8 +5,12 @@
   --background: #11110f;
   --surface: #191916;
   --line: #33322d;
-  --honey: #f4b942;
-  --honey-dark: #1d1607;
+  --accent: #91a7ff;
+  --accent-dark: #12172c;
+  --hive: #f4b942;
+  --hive-soft: #ffd068;
+  --hive-dark: #1d1607;
+  --classifier: #7fd9ae;
   font-family:
     Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -47,7 +51,7 @@ a {
 }
 
 a:focus-visible {
-  outline: 2px solid var(--honey);
+  outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
 
@@ -58,7 +62,7 @@ a:focus-visible {
   z-index: 10;
   padding: 10px 14px;
   color: var(--background);
-  background: var(--honey);
+  background: var(--accent);
   font-size: 0.78rem;
   font-weight: 800;
   text-decoration: none;
@@ -99,7 +103,7 @@ footer {
   width: 34px;
   height: 34px;
   color: var(--background);
-  background: var(--honey);
+  background: var(--accent);
   place-items: center;
   font-size: 0.68rem;
   font-weight: 800;
@@ -133,7 +137,7 @@ nav {
   left: 0;
   height: 2px;
   content: "";
-  background: var(--honey);
+  background: var(--accent);
 }
 
 .intro {
@@ -142,7 +146,7 @@ nav {
 
 .eyebrow {
   margin: 0 0 26px;
-  color: var(--honey);
+  color: var(--accent);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.74rem;
   font-weight: 700;
@@ -197,6 +201,9 @@ h1 {
 }
 
 .project-card {
+  --project-accent: var(--hive);
+  --project-accent-soft: var(--hive-soft);
+  --project-ink: var(--hive-dark);
   display: grid;
   grid-template-columns: minmax(0, 0.88fr) minmax(440px, 1.12fr);
   min-height: 610px;
@@ -205,7 +212,7 @@ h1 {
   border: 1px solid var(--line);
 }
 
-.upcoming-project {
+.project-row {
   display: grid;
   grid-template-columns: 72px minmax(0, 1fr) minmax(250px, 0.55fr);
   gap: clamp(28px, 4vw, 64px);
@@ -214,7 +221,11 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
-.upcoming-index {
+.project-row--classifier {
+  --project-accent: var(--classifier);
+}
+
+.project-row-index {
   align-self: start;
   color: #615e56;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -222,22 +233,22 @@ h1 {
 }
 
 .planned-status {
-  color: var(--honey);
+  color: var(--project-accent);
 }
 
-.upcoming-copy h3 {
+.project-row-copy h3 {
   margin: 30px 0 22px;
   font-size: clamp(2.7rem, 6vw, 5.5rem);
 }
 
-.upcoming-copy > p {
+.project-row-copy > p {
   max-width: 630px;
   margin: 0;
   color: var(--muted);
   line-height: 1.7;
 }
 
-.upcoming-action {
+.project-row-action {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -245,13 +256,13 @@ h1 {
   padding-bottom: 4px;
 }
 
-.upcoming-action > span {
+.project-row-action > span {
   color: #77736a;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.66rem;
 }
 
-.upcoming-action a {
+.project-row-action a {
   display: flex;
   gap: 24px;
   align-items: center;
@@ -260,9 +271,9 @@ h1 {
   text-underline-offset: 6px;
 }
 
-.upcoming-action a:hover,
-.upcoming-action a:focus-visible {
-  color: var(--honey);
+.project-row-action a:hover,
+.project-row-action a:focus-visible {
+  color: var(--project-accent);
 }
 
 .project-copy {
@@ -291,7 +302,7 @@ h1 {
   width: 7px;
   height: 7px;
   margin-right: 7px;
-  background: var(--honey);
+  background: var(--project-accent);
   border-radius: 50%;
 }
 
@@ -342,8 +353,8 @@ h3 {
   justify-content: space-between;
   min-width: 170px;
   padding: 15px 17px;
-  color: var(--honey-dark);
-  background: var(--honey);
+  color: var(--project-ink);
+  background: var(--project-accent);
   font-size: 0.78rem;
   font-weight: 800;
   text-decoration: none;
@@ -351,7 +362,7 @@ h3 {
 
 .primary-action:hover,
 .primary-action:focus-visible {
-  background: #ffd068;
+  background: var(--project-accent-soft);
 }
 
 .text-action {
@@ -372,7 +383,7 @@ h3 {
   justify-content: center;
   min-width: 0;
   padding: 46px;
-  background: var(--honey);
+  background: var(--project-accent);
 }
 
 .window {
@@ -430,7 +441,7 @@ h3 {
   height: 22px;
   margin-bottom: 7px;
   color: #11110f;
-  background: var(--honey);
+  background: var(--project-accent);
   place-items: center;
   font-size: 0.55rem;
   font-weight: 900;
@@ -445,8 +456,8 @@ h3 {
 }
 
 .mini-sidebar .selected {
-  background: var(--honey);
-  border-color: var(--honey);
+  background: var(--project-accent);
+  border-color: var(--project-accent);
 }
 
 .mini-content {
@@ -478,7 +489,7 @@ h3 {
 .mini-heading i {
   width: 46px;
   height: 14px;
-  background: var(--honey);
+  background: var(--project-accent);
 }
 
 .agent-grid {
@@ -501,7 +512,7 @@ h3 {
   display: grid;
   width: 26px;
   height: 26px;
-  color: var(--honey);
+  color: var(--project-accent);
   background: #2c271a;
   place-items: center;
   font-size: 0.52rem;
@@ -526,7 +537,7 @@ h3 {
 }
 
 .activity-line span:first-child {
-  background: var(--honey);
+  background: var(--project-accent);
 }
 
 .visual-label {
@@ -566,11 +577,11 @@ footer p {
     min-height: 500px;
   }
 
-  .upcoming-project {
+  .project-row {
     grid-template-columns: 44px 1fr;
   }
 
-  .upcoming-action {
+  .project-row-action {
     grid-column: 2;
   }
 }
@@ -638,15 +649,15 @@ footer p {
     text-align: left;
   }
 
-  .upcoming-project {
+  .project-row {
     grid-template-columns: 1fr;
   }
 
-  .upcoming-index {
+  .project-row-index {
     display: none;
   }
 
-  .upcoming-action {
+  .project-row-action {
     grid-column: 1;
   }
 }
