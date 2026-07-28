@@ -2,9 +2,8 @@
 
 ## Status
 
-Planned. The classifier repository does not yet publish a project page. Until
-it does, the portfolio links directly to:
-<https://github.com/SantiaGoMode/capex_opex_classifier>.
+Implemented and live:
+<https://santiagomode.github.io/capex_opex_classifier/>.
 
 ## Goal
 

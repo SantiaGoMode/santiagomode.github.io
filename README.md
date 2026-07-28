@@ -5,10 +5,15 @@ The source for Cris Santiago's projects page.
 ## Current projects
 
 - [Hive](https://santiagomode.github.io/hive/) — live project page
-- [CapEx / OpEx Classifier](https://github.com/SantiaGoMode/capex_opex_classifier)
-  — repository; project page planned
+- [CapEx / OpEx Classifier](https://santiagomode.github.io/capex_opex_classifier/)
+  — live project page
 
-The implementation plan for the classifier's future page is in
+## Early projects
+
+- [Flairrcoin](https://santiagomode.github.io/flairrcoin-project/) — project
+  archive
+
+The implementation plan for the classifier page is in
 [`plans/capex-opex-classifier-page.md`](plans/capex-opex-classifier-page.md).
 
 ## Local preview
