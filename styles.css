@@ -406,94 +406,6 @@ h1 {
   background: #61c454;
 }
 
-.window-body {
-  display: grid;
-  grid-template-columns: 76px 1fr;
-  min-height: 360px;
-}
-
-.mini-sidebar {
-  padding: 18px 11px;
-  background: #171614;
-  border-right: 1px solid #353331;
-}
-
-.mini-logo {
-  width: 31px;
-  height: 31px;
-  margin-bottom: 25px;
-  background: var(--accent);
-  border-radius: 8px;
-}
-
-.mini-sidebar span {
-  display: block;
-  width: 38px;
-  height: 5px;
-  margin-bottom: 13px;
-  background: #403d38;
-  border-radius: 10px;
-}
-
-.mini-sidebar span.selected {
-  width: 46px;
-  background: #f2eee8;
-}
-
-.mini-content {
-  padding: 24px;
-}
-
-.mini-heading {
-  width: 39%;
-  height: 9px;
-  margin-bottom: 23px;
-  background: #f2eee8;
-  border-radius: 10px;
-}
-
-.agent-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.agent-card {
-  min-height: 106px;
-  padding: 13px;
-  background: #262421;
-  border: 1px solid #3b3833;
-  border-radius: 7px;
-}
-
-.agent-card::before {
-  display: block;
-  width: 28px;
-  height: 28px;
-  margin-bottom: 17px;
-  content: "";
-  background: var(--accent);
-  border-radius: 50%;
-}
-
-.agent-card::after {
-  display: block;
-  width: 70%;
-  height: 6px;
-  content: "";
-  background: #777168;
-  border-radius: 10px;
-  box-shadow: 0 11px #47433e;
-}
-
-.activity-line {
-  height: 5px;
-  margin-top: 18px;
-  background:
-    linear-gradient(90deg, var(--accent) 0 18%, #514d47 18% 32%, transparent 32%);
-  border-radius: 10px;
-}
-
 .project-screenshot {
   display: block;
   width: 100%;
@@ -745,23 +657,6 @@ footer {
 
   .project-visual {
     padding: 16px;
-  }
-
-  .window-body {
-    grid-template-columns: 56px 1fr;
-    min-height: 300px;
-  }
-
-  .mini-sidebar {
-    padding-inline: 9px;
-  }
-
-  .mini-content {
-    padding: 18px;
-  }
-
-  .agent-card {
-    min-height: 92px;
   }
 
   .visual-label span:last-child {
