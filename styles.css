@@ -273,6 +273,7 @@ h1 {
   letter-spacing: -0.06em;
 }
 
+.project-card--upskill h3,
 .project-card--classifier h3,
 .project-card--freshbooks h3 {
   font-size: clamp(2.7rem, 4.5vw, 4.05rem);
@@ -938,6 +939,7 @@ footer {
   }
 
   .project-copy h3,
+  .project-card--upskill h3,
   .project-card--classifier h3 {
     margin-top: 30px;
     font-size: clamp(2.65rem, 13vw, 4rem);

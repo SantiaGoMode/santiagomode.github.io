@@ -7,6 +7,7 @@ The source for Cris Santiago's projects page.
 
 ## Current projects
 
+- [Upskill AI Labs](https://santiagomode.github.io/Upskill-AI-Labs/) — live project page
 - [Hive](https://santiagomode.github.io/hive/) — live project page
 - [CapEx / OpEx Classifier](https://santiagomode.github.io/capex_opex_classifier/)
   — live project page
