@@ -274,6 +274,7 @@ h1 {
 }
 
 .project-card--upskill h3,
+.project-card--skills h3,
 .project-card--classifier h3,
 .project-card--freshbooks h3 {
   font-size: clamp(2.7rem, 4.5vw, 4.05rem);
