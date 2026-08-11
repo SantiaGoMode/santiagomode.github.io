@@ -720,6 +720,34 @@ footer {
   letter-spacing: -0.012em;
 }
 
+.approach-list {
+  display: grid;
+  gap: 16px;
+  max-width: 46ch;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.approach-list li {
+  position: relative;
+  padding-left: 26px;
+  font-size: clamp(1rem, 1.5vw, 1.12rem);
+  line-height: 1.5;
+  letter-spacing: -0.012em;
+  text-wrap: pretty;
+}
+
+.approach-list li::before {
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 13px;
+  height: 2px;
+  content: "";
+  background: var(--accent);
+}
+
 .capability-list {
   display: flex;
   flex-direction: column;

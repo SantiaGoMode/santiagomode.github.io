@@ -7,16 +7,16 @@ The source for Cris Santiago's projects page.
 
 ## Current projects
 
-- [Upskill AI Labs](https://santiagomode.github.io/Upskill-AI-Labs/) — live project page
-- [Apptio Skills Registry](https://santiagomode.github.io/apptio-skills-registry/)
-  — live project page
-- [Hive](https://santiagomode.github.io/hive/) — live project page
-- [CapEx / OpEx Classifier](https://santiagomode.github.io/capex_opex_classifier/)
-  — live project page
+- [Upskill AI Labs](https://santiagomode.github.io/Upskill-AI-Labs/): live project page
+- [Apptio Skills Registry](https://santiagomode.github.io/apptio-skills-registry/):
+  live project page
+- [Hive](https://santiagomode.github.io/hive/): live project page
+- [CapEx / OpEx Classifier](https://santiagomode.github.io/capex_opex_classifier/):
+  live project page
 
 ## Early projects
 
-- [Flairrcoin](https://santiagomode.github.io/flairrcoin-project/) — project
+- [Flairrcoin](https://santiagomode.github.io/flairrcoin-project/): project
   archive
 
 ## Local preview
